@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootStrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Buttons and Button Groups</title>
+</head>
+<body>
+ <div class="container border bg-light">
+    <h3>Buttons basic</h3>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>    
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-link">Link</button>
+
+<hr>
+<hr>
+
+<h3>Different colors/meanings</h3>
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+
+<hr>
+<h3>Buttons with different sizes</h3>
+<button type="button" class="btn btn-primary btn-lg">Large</button>
+<button type="button" class="btn btn-primary">Default</button>
+<button type="button" class="btn btn-primary btn-sm">Small</button>
+
+<hr>
+<h3>Block buttons (Long buttons)</h3>
+<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+
+<hr>
+<h3>Disabled buttons</h3>
+<button type="button" class="btn btn-primary btn-lg" disabled>Primary Button</button>
+<button type="button" class="btn btn-secondary btn-lg" disabled> Button</button>
+
+<hr>
+<h3>Disabled buttons using 'a' tags</h3>
+<a href="#" class="btn btn-primary btn-lg disabled">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg disabled">Link</a>
+
+<hr>
+
+<h3>Active buttons</h3>
+<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+
+<hr>
+
+<h3>Spinner buttons</h3>
+<button type="button" class="btn btn-primary" disabled>
+    <span class="spinner-border spinner-border-sm"></span>
+</button>
+<button type="button" class="btn btn-primary" disabled>
+    <span class="spinner-border spinner-border-sm"></span> Loading...
+</button>
+<button type="button" class="btn btn-primary" disabled>
+    <span class="spinner-grow spinner-grow-sm"></span> Loading...
+</button>
+
+</div>
+
+<div class="container border py-2 my-2">
+<h1>Button groups</h1>
+</div>
+<div class="container border bg-light">
+    <h3>Button group</h3>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">Home</button>
+        <button type="button" class="btn btn-primary">About</button>
+        <button type="button" class="btn btn-primary">Services</button>
+    </div>
+    <hr>
+        <h3>Button Toolbar</h3>
+        <div class="btn-group mr-2">
+            <button type="button" class="btn btn-primary">
+                <i class="fa fa-font">Home</i>
+            </button>
+            <button type="button" class="btn btn-primary">
+                <i class="fa fa-bold">About</i>
+            </button>
+            <button type="button" class="btn btn-primary">
+                <i class="fa fa-italic">Services</i>
+            </button>
+        </div>
+
+        <hr>
+        <div class="btn-group mr-2">
+            <button type="button" class="btn btn-primary">
+                <i class="fa fa-align-left">ABC</i>
+            </button>
+            <button type="button" class="btn btn-primary">
+                <i class="fa fa-align-center">DEF</i>
+            </button>
+            <button type="button" class="btn btn-primary">
+                <i class="fa fa-align-right">GHI</i>
+            </button>
+            <button type="button" class="btn btn-primary">
+                <i class="fa fa-align-justify">KLMN</i>
+            </button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">
+                <i class="fa fa-undo">OPQ</i>
+            </button>
+        </div>
+        <hr>
+        <h3>Nesting buttons</h3>
+        <div class="btn-group">
+            <a href="#" class="btn btn-primary">Home</a>
+            <a href="#" class="btn btn-primary">About</a>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Services</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Web Design</a>
+                    <a class="dropdown-item" href="#">Web Development</a>
+                </div>
+            </div>
+        </div>
+<hr>
+        <H3>Nesting button groups</H3>
+        <div class="btn-group d-flex">
+            <button type="button" class="btn btn-primary">Home</button>
+            <button type="button" class="btn btn-primary">About</button>
+            <button type="button" class="btn btn-primary">Services</button>
+        </div>
+
+
+
+</div>
+    <!--JS libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+</html>

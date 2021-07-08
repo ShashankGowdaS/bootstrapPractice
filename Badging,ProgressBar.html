@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Including Font Awesome Icons in Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+<h3>Badges of different sizes</h3>
+        <h1>Bootstrap heading <span class="badge badge-secondary">New</span></h1>
+<h2>Bootstrap heading <span class="badge badge-secondary">New</span></h2>
+<h3>Bootstrap heading <span class="badge badge-secondary">New</span></h3>
+<h4>Bootstrap heading <span class="badge badge-secondary">New</span></h4>
+<h5>Bootstrap heading <span class="badge badge-secondary">New</span></h5>
+<h6>Bootstrap heading <span class="badge badge-secondary">New</span></h6>
+
+
+<hr>
+<h3>Different classes</h3>
+<span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span>
+<span class="badge badge-info">Info</span>
+<span class="badge badge-dark">Dark</span>
+<span class="badge badge-light">Light</span>
+
+
+<hr>
+<h3>Pill badges</h3>
+<span class="badge badge-pill badge-primary">Primary</span>
+<span class="badge badge-pill badge-secondary">Secondary</span>
+<span class="badge badge-pill badge-success">Success</span>
+<span class="badge badge-pill badge-danger">Danger</span>
+<span class="badge badge-pill badge-warning">Warning</span>
+<span class="badge badge-pill badge-info">Info</span>
+<span class="badge badge-pill badge-dark">Dark</span>
+<span class="badge badge-pill badge-light">Light</span>
+
+<hr>
+<h3>Counter with badges</h3>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a href="#" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Profile</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link active">Messages <span class="badge badge-light">24</span></a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Notification <span class="badge badge-primary">5</span></a>
+    </li>
+</ul>
+</div>
+<hr>
+<hr>
+<hr>
+<hr>
+<div class="container bordered">
+<h1 class="h1">Progress Bar</h1>
+
+    <div class="progress">
+        <div class="progress-bar" style="width: 50%"></div>
+    </div>
+<hr>
+<hr>
+
+    <h3>Progress bar with labels</h3>
+    <div class="progress">
+        <div class="progress-bar" style="width: 60%;">60%</div>
+    </div>
+
+    <hr>
+    <div class="progress">
+        <div class="progress-bar" style="min-width: 20px;">
+            0%
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar" style="min-width: 20px; width: 2%;">
+            2%
+        </div>
+    </div>
+
+    <hr>
+    <h5>Stripped progress bar</h5>
+    <div class="progress">
+        <div class="progress-bar progress-bar-stripped" style="width: 70%">70%</div>
+    </div>
+    <hr>
+    <h3>Animated Progress bar</h3>
+    <div class="progress">
+        <div class="progress-bar progress-bar-stripped progress-bar-animated" style="width: 50%"></div>
+    </div>
+
+<hr>
+    <h3>Dynamic progress bar</h3>
+    <!-- Progress bar HTML -->
+<div class="progress">
+    <div class="progress-bar progress-bar-striped" style="min-width: 20px;"></div>
+</div>
+    
+<!-- jQuery Script -->
+<script type="text/javascript">
+    var i = 0;
+    function makeProgress(){
+        if(i < 100){
+            i = i + 1;
+            $(".progress-bar").css("width", i + "%").text(i + " %");
+        }
+        // Wait for sometime before running this script again
+        setTimeout("makeProgress()", 100);
+    }
+    makeProgress();
+</script>
+
+<hr>
+<h3>Stacked Pg bar</h3>
+<div class="progress">
+    <div class="progress-bar bg-success" style="width: 40%">
+        Program Files (40%)
+    </div>
+    <div class="progress-bar bg-warning" style="width: 25%">
+        Residual Files (25%)
+    </div>
+    <div class="progress-bar bg-danger" style="width: 15%">
+        Junk Files (15%)
+    </div>
+</div>
+
+
+
+
+    </div>
+    
+    
+    <!-- JS files: jQuery first, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
